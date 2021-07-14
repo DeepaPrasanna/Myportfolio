@@ -1,14 +1,22 @@
-require(`dotenv`).config()
+require(`dotenv`).config();
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
-const googleAnalyticsTrackingId = process.env.GOOGLE_ANALYTICS_ID
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
+const googleAnalyticsTrackingId = process.env.GOOGLE_ANALYTICS_ID;
 
 module.exports = {
   siteMetadata: {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
+    siteTitleAlt: `Anne Deepa Prasanna Portfolio`,
+    siteTitle: `Anne Deepa Prasanna`,
+    siteHeadline: `Anne Deepa Prasanna - Frontend Developer -portfolio`,
+    siteUrl: `https://cara.lekoarts.de`,
+    siteDescription: `Frontend Developer - Love to transform ideas into modern web applications`,
+    siteLanguage: `en`,
+    siteImage: `/banner.jpg`,
+    author: `Anne Deepa Prasanna`,
+    // basePath,
   },
   plugins: [
     {
@@ -25,25 +33,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
-        short_name: `Cara`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        name: `Anne Deepa Prasanna`,
+        short_name: `Deepa Prasanna`,
+        description: `Frontend Developer - Love to transform ideas into modern web applications`,
         start_url: `/`,
         background_color: `#141821`,
         theme_color: `#f6ad55`,
         display: `standalone`,
-        icons: [
-          {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-        ],
+        icons: [],
       },
     },
     `gatsby-plugin-offline`,
@@ -58,4 +55,4 @@ module.exports = {
       },
     },
   ].filter(Boolean),
-}
+};
