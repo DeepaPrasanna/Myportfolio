@@ -11,7 +11,7 @@ module.exports = {
     siteTitleAlt: `Anne Deepa Prasanna Portfolio`,
     siteTitle: `Anne Deepa Prasanna`,
     siteHeadline: `Anne Deepa Prasanna - Frontend Developer -portfolio`,
-    siteUrl: `https://annedeepaprasanna.netlify.app/`,
+    siteUrl: `https://anneprasanna.netlify.app/`,
     siteDescription: `Frontend Developer - Love to transform ideas into modern web applications`,
     siteLanguage: `en`,
     siteImage: `/siteBanner.jpg`,
