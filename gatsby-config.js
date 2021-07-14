@@ -3,7 +3,7 @@ require(`dotenv`).config();
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 const googleAnalyticsTrackingId = process.env.GOOGLE_ANALYTICS_ID;
 
-module.exports = ({ basePath = `/`, mdx = true }) => ({
+module.exports = {
   siteMetadata: {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
@@ -16,7 +16,7 @@ module.exports = ({ basePath = `/`, mdx = true }) => ({
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
     author: `Anne Deepa Prasanna`,
-    basePath,
+    // basePath,
   },
   plugins: [
     {
@@ -55,4 +55,4 @@ module.exports = ({ basePath = `/`, mdx = true }) => ({
       },
     },
   ].filter(Boolean),
-});
+};
