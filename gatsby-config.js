@@ -14,7 +14,7 @@ module.exports = {
     siteUrl: `https://annedeepaprasanna.netlify.app/`,
     siteDescription: `Frontend Developer - Love to transform ideas into modern web applications`,
     siteLanguage: `en`,
-    siteImage: `/banner.jpg`,
+    siteImage: `/siteBanner.jpg`,
     author: `Anne Deepa Prasanna`,
     // basePath,
   },
