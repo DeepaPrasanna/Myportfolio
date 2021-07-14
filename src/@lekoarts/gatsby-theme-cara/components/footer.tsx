@@ -1,7 +1,12 @@
 /** @jsx jsx */
-import { Box, Flex, Link, jsx } from "theme-ui";
+import { useEffect } from "react";
+import { Box, Flex, Link, jsx, useColorMode } from "theme-ui";
 
 const Footer = () => {
+  const [colorMode, setColorMode] = useColorMode();
+  useEffect(() => {
+    setColorMode("dark");
+  }, []);
   return (
     <Box as="footer" variant="footer">
       Made with ❤ using{" "}
